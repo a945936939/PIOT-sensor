@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to IOT Car Share System’s documentation! &#8212; IOT Car Share System 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-iot-car-share-system-s-documentation">
+<h1>Welcome to IOT Car Share System’s documentation!<a class="headerlink" href="#welcome-to-iot-car-share-system-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="module-ConsoleMenu">
+<span id="consolemenu-py"></span><h1>ConsoleMenu.py<a class="headerlink" href="#module-ConsoleMenu" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="ConsoleMenu.ConsoleMenu">
+<em class="property">class </em><code class="sig-prename descclassname">ConsoleMenu.</code><code class="sig-name descname">ConsoleMenu</code><a class="headerlink" href="#ConsoleMenu.ConsoleMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>The ConsoleMenu class. This class handles the menu for a user</p>
+<dl class="py method">
+<dt id="ConsoleMenu.ConsoleMenu.login">
+<code class="sig-name descname">login</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ConsoleMenu.ConsoleMenu.login" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prompts user with username and password</p>
+<p>Prompts the user for username and password and if
+successful user establishes connection with server.</p>
+<dl class="simple">
+<dt>__username<span class="classifier">str</span></dt><dd><p>The string the user inputs as their username</p>
+</dd>
+<dt>__password<span class="classifier">str</span></dt><dd><p>The string the user inputs as their password</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ConsoleMenu.ConsoleMenu.regUser">
+<code class="sig-name descname">regUser</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ConsoleMenu.ConsoleMenu.regUser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains complete registration process.</p>
+<p>Prompts user for registration information and
+stores user input into database after the 
+attributes are validated.</p>
+<dl class="simple">
+<dt>__username<span class="classifier">str</span></dt><dd><p>Takes user input as their username</p>
+</dd>
+<dt>__password<span class="classifier">str</span></dt><dd><p>Takes user input as their password</p>
+</dd>
+<dt>__firstname<span class="classifier">str</span></dt><dd><p>Takes user input as their first name</p>
+</dd>
+<dt>__lastname<span class="classifier">str</span></dt><dd><p>Takes user input as their last name</p>
+</dd>
+<dt>__email<span class="classifier">str </span></dt><dd><p>Takes user input as their email address</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-BookingSystem">
+<span id="bookingsystem-py"></span><h1>BookingSystem.py<a class="headerlink" href="#module-BookingSystem" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="BookingSystem.BookingSystem">
+<em class="property">class </em><code class="sig-prename descclassname">BookingSystem.</code><code class="sig-name descname">BookingSystem</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#BookingSystem.BookingSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>The BookingSystem class. This class handles the Booking system</p>
+<dl class="py method">
+<dt id="BookingSystem.BookingSystem.bookCar">
+<code class="sig-name descname">bookCar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#BookingSystem.BookingSystem.bookCar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Books a car that gets added into Google Calendar</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="BookingSystem.BookingSystem.canelBooking">
+<code class="sig-name descname">canelBooking</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#BookingSystem.BookingSystem.canelBooking" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes event from Google Calendar</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="BookingSystem.BookingSystem.searchCars">
+<code class="sig-name descname">searchCars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#BookingSystem.BookingSystem.searchCars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches database to print fields of car properties in the console</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="BookingSystem.BookingSystem.showAvailableCars">
+<code class="sig-name descname">showAvailableCars</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#BookingSystem.BookingSystem.showAvailableCars" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints a list of all available cars</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="BookingSystem.BookingSystem.viewBookingHistory">
+<code class="sig-name descname">viewBookingHistory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#BookingSystem.BookingSystem.viewBookingHistory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints a list of cars that the user has booked</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-LocationGMAPI">
+<span id="locationgmapi-py"></span><h1>LocationGMAPI.py<a class="headerlink" href="#module-LocationGMAPI" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="LocationGMAPI.LocationGMAPI">
+<em class="property">class </em><code class="sig-prename descclassname">LocationGMAPI.</code><code class="sig-name descname">LocationGMAPI</code><a class="headerlink" href="#LocationGMAPI.LocationGMAPI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class used to aquire Location of User using the Google Map API.</p>
+<dl class="py method">
+<dt id="LocationGMAPI.LocationGMAPI.geoCode">
+<code class="sig-name descname">geoCode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#LocationGMAPI.LocationGMAPI.geoCode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the details of the Location of the Users Booked Car.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>user: Username of the user who’s Car-location is desired to be returned.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-CarSystem">
+<span id="carsystem-py"></span><h1>CarSystem.py<a class="headerlink" href="#module-CarSystem" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="CarSystem.CarSystem">
+<em class="property">class </em><code class="sig-prename descclassname">CarSystem.</code><code class="sig-name descname">CarSystem</code><a class="headerlink" href="#CarSystem.CarSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for CarSystem</p>
+<dl class="py method">
+<dt id="CarSystem.CarSystem.checkLocked">
+<code class="sig-name descname">checkLocked</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#CarSystem.CarSystem.checkLocked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the Car is Locked and ‘Locks’ it if it is unlocked, conversely Unlocks it
+if the Car is Locked</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>user: User who’s Car is to be Locked/Unlocked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="CarSystem.CarSystem.fetchid">
+<code class="sig-name descname">fetchid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#CarSystem.CarSystem.fetchid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the UserID assigned to the Username passed as a Parameter.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>user: Username.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="CarSystem.CarSystem.lockCar">
+<code class="sig-name descname">lockCar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#CarSystem.CarSystem.lockCar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locks User’s Car.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>user: Username.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="CarSystem.CarSystem.returnCar">
+<code class="sig-name descname">returnCar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#CarSystem.CarSystem.returnCar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes the status of the Car from being Booked to being Available for another person to Book.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>user: Booked Car’s Client.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="CarSystem.CarSystem.unlockCar">
+<code class="sig-name descname">unlockCar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#CarSystem.CarSystem.unlockCar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unlocks User’s Car.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>user: Username.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="CarSystem.CarSystem.unreturnCar">
+<code class="sig-name descname">unreturnCar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#CarSystem.CarSystem.unreturnCar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function for debugging.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-MPServer">
+<span id="mpserver-py"></span><h1>MPServer.py<a class="headerlink" href="#module-MPServer" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="MPServer.main">
+<code class="sig-prename descclassname">MPServer.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MPServer.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Listens to incoming Connection on the Open Ports designated in the Config JSON file.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-APClient">
+<span id="apclient-py"></span><h1>APClient.py<a class="headerlink" href="#module-APClient" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="APClient.APClient">
+<em class="property">class </em><code class="sig-prename descclassname">APClient.</code><code class="sig-name descname">APClient</code><a class="headerlink" href="#APClient.APClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for the AP Client.</p>
+<dl class="py method">
+<dt id="APClient.APClient.connectMaster">
+<code class="sig-name descname">connectMaster</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#APClient.APClient.connectMaster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to Connect Agent PI to MasterPI through Sockets.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>user: Credential to be sent to the Master PI as a reference and as verification.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="APClient.APClient.login">
+<code class="sig-name descname">login</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#APClient.APClient.login" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to Login User, checks Credentials against Database to ensure authenticity
+through the Google Cloud SQL Database.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-CloudDBUtils">
+<span id="clouddbutils-py"></span><h1>CloudDBUtils.py<a class="headerlink" href="#module-CloudDBUtils" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="CloudDBUtils.CloudDBUtils">
+<em class="property">class </em><code class="sig-prename descclassname">CloudDBUtils.</code><code class="sig-name descname">CloudDBUtils</code><a class="headerlink" href="#CloudDBUtils.CloudDBUtils" title="Permalink to this definition">¶</a></dt>
+<dd><p>CloudDBUtils is a Class that handles the connection betwen the Google Cloud SQL Server and the 
+CarShare Applications various IO Consoles throughout the IOT System.</p>
+<dl class="py method">
+<dt id="CloudDBUtils.CloudDBUtils.checkCredentials">
+<code class="sig-name descname">checkCredentials</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em>, <em class="sig-param"><span class="n">password</span></em><span class="sig-paren">)</span><a class="headerlink" href="#CloudDBUtils.CloudDBUtils.checkCredentials" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the User exists in the Database returns True if it does and False if it does not.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>user: Username of the Login Attempt.
+password: Password of the Login Attempt.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="CloudDBUtils.CloudDBUtils.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CloudDBUtils.CloudDBUtils.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes Connection</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="CloudDBUtils.CloudDBUtils.printUsers">
+<code class="sig-name descname">printUsers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#CloudDBUtils.CloudDBUtils.printUsers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print all Users in the Database.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="CloudDBUtils.CloudDBUtils.summonEmail">
+<code class="sig-name descname">summonEmail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#CloudDBUtils.CloudDBUtils.summonEmail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns Email of the User.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>user: Username of current User.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="CloudDBUtils.CloudDBUtils.summonFirstName">
+<code class="sig-name descname">summonFirstName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#CloudDBUtils.CloudDBUtils.summonFirstName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns FirstName of the User.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>user: Username of current User.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="CloudDBUtils.CloudDBUtils.summonLastName">
+<code class="sig-name descname">summonLastName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#CloudDBUtils.CloudDBUtils.summonLastName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns LastName of the User.</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>user: Username of current User.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">IOT Car Share System</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Jeremy Chung, Heshan Mapa, Liam Marasigan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
